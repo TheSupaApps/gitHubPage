@@ -2,61 +2,66 @@
 <!doctype html>
 <html>
 <head>
+
 <meta charset="UTF-8">
-<title>Untitled Document</title>
-<link href="stylesheets/layout.css" rel="stylesheet" type="text/css">
-<link href="stylesheets/nivo-slider.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="stylesheets/default.css" type="text/css" media="screen" />
+
+<link href="stylesheets/layout.css" rel="stylesheet">
+<link href="stylesheets/nivo-slider.css" rel="stylesheet">
+<link href="stylesheets/default.css" rel="stylesheet" media="screen" />
+
+<script src="javascripts/jquery-1.9.0.min.js"></script>
+<script src="javascripts/jquery.nivo.slider.pack.js"></script>
+
+<title>忠輝資訊有限公司</title>
 </head>
 
-<body class="index">
+<body id="body" class="index">
 <div class="header"><!-- #BeginLibraryItem "/Library/LOGO.lbi" -->
-<div id="logo"><a href="index.html"><img src="images/logo.png" width="354" height="110" alt="air Bridge 天橋科技"></a></div><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/nav.lbi" -->
+<div id="logo"><a href="index.html"><img src="images/logo.png" width="354" height="110" alt="忠輝資訊"></a></div><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/nav.lbi" -->
     <nav>
     <ul id="nav">
-      <li><a href="about.html"><b>About</b>關於天橋</a></li>
+      <li><a href="javascript:;"><b>About</b>關於忠輝</a></li>
       <li><a href="javascript:;"><b>Products</b>產品介紹</a>
           <ul>
-                <li><a href="moneyCare.html">MoneyCare App</a></li>
-                <li><a href="inwedding.html">inWedding App</a></li>
-                <li><a href="our-inwedding.html">Our inWedding App</a></li>
+                <li><a href="javascript:;">ToSort App</a></li>
+                <li><a href="javascript:;">Now+SMS App</a></li>
+                <li><a href="javascript:;">Delivering Babies App</a></li>
             </ul>
         </li>
       <li><a href="javascript:;"><b>News</b>最新消息</a></li>
       <li><a href="javascript:;"><b>Media report</b>新聞報導</a></li>
-      <li><a href="contact.html"><b>Contact</b>聯絡我們</a></li>
+      <li><a href="javascript:;"><b>Contact</b>聯絡我們</a></li>
     </ul>
     </nav>
 <!-- #EndLibraryItem --></div>
 <div id="ad">
     <div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">
-            <a href="javascript:;"><img src="images/ad1.jpg" data-thumb="images/ad1.jpg" alt="" /></a>
-            <a href="inwedding.html"><img src="images/ad2.jpg" data-thumb="images/ad2.jpg" alt="" /></a>
-            <a href="our-inwedding.html"><img src="images/ad3.jpg" data-thumb="images/ad3.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/adToSort.png" data-thumb="images/adToSort.png" alt="" /></a>
+            <a href="javascript:;"><img src="images/adNow+SMS.png" data-thumb="images/adNow+SMS.png" alt="" /></a>
+            <a href="javascript:;"><img src="images/adDeliveringBabies.png" data-thumb="images/adDeliveringBabies.png" alt="" /></a>
         </div>
     </div>
 </div>
-<div class="main"><img src="images/indexContent.png" width="881" height="281" usemap="#Map2">
-  <map name="Map2">
-    <area shape="rect" coords="111,130,162,150" href="http://mall.wed168.com.tw/cus.asp?cid=168394" target="_blank" alt="婚紗展優惠">
-  </map>
+
+<div class="main"><img src="images/NEWS.png" width="881" height="281" usemap="#Map2">
+
 </div>
+
 <div class="footer">
   <img src="images/footer.png" width="959" height="149" usemap="#Map">
     <map name="Map">
-      <area shape="rect" coords="702,36,858,58" href="mailto:service@airbridge.com.tw">
+
     </map>
 </div>
 </body>
-<script src="javascripts/jquery-1.9.0.min.js"></script>
-<script src="javascripts/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript">
+
+<script>
     $(window).load(function() 
     {
         $('#slider').nivoSlider(
         {
-            effect: 'fold',
+            effect: 'random',
         });
     });
 </script>
