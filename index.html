@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>中輝資訊有限公司</title>
-  <script type="text/javascript">
+  <script>
 
     var language;
+    var directPage = "en/index.html";
+    
     if(navigator.appName == 'Netscape')
     {
       language = navigator.language;
@@ -16,16 +18,13 @@
       language = navigator.browserLanguage;
     }
 
-    var directPage = "en/index.html";
-
-    if(language.toLowerCase().index('tw') > -1) directPage = "tw/index.html";       //繁體中文
-    else if(language.toLowerCase().index('en') > -1) directPage = "en/index.html";  //英文
+    if(language.toLowerCase().indexOf("tw") > -1) directPage = "tw/index.html";       //繁體中文
+    else if(language.toLowerCase().indexOf("en") > -1) directPage = "en/index.html";  //英文
 
     document.location.href = directPage;
+   
   </script>
-
 </head>
 <body>
-
 </body>
 </html>
