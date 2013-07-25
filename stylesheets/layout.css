@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 {
 	background: -webkit-linear-gradient(top, #b4ddb4 0%,#52b152 51%,#1fbc00 100%);
 }*/
-#nav
+.nav
 { 
 	text-align:right; 
 	position:absolute; 
@@ -17,14 +17,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	top:50px;
 }
 
-#nav > li
+.nav > li
 { 
 	display:inline-block;
 	padding:0 16px; 
 	position:relative;
 }
 
-#nav > li > a
+.nav > li > a
 { 
 	font-family:Arial, Helvetica, sans-serif; 
 	display:inline-block; 
@@ -34,12 +34,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	text-align:left;
 }
 
-#nav > li > a:hover
+.nav > li > a:hover
 {
 	color:#a2deff;
 }
 
-#nav > li > a b
+.nav > li > a b
 { 
 	font-family:Century Gothic,Helvetica, Arial, sans-serif; 
 	display:block; 
@@ -48,7 +48,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	padding:0 0 2px;
 }
 
-#nav > li ul
+.nav > li ul
 { 
 	left:-1000em; 
 	opacity:0;
@@ -58,19 +58,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	text-align:left; 
 	background-color:#108dcf; 
 	background-color:rgba(255,255,255,.5); 
-	width:170px; 
+	width:100px; 
 	border-radius:6px; 
-	margin-left:-40px;
+	margin-left: 0px;
 	top:35px;
 }
 
-#nav > li:hover ul
+.nav > li:hover ul
 {
 	left:0; 
 	opacity:1;
 }
 
-#nav > li ul:after
+.nav > li ul:after
 { 
 	content:""; 
 	display:block; 
@@ -85,7 +85,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	margin-left:-10px;
 }
 
-#nav > li ul a
+.nav > li ul a
 { 
 	text-decoration:none; 
 	display:inline-block; 
@@ -93,7 +93,52 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 	color:#FFF;
 }
 
-#nav > li ul a:hover
+.nav > li ul a:hover
+{ 
+	color:#a2deff;
+}
+
+/*第二層目錄*/
+.nav > li:hover ul ul
+{
+	left:-1000em; 
+	opacity:0;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s; 
+	position: absolute; 
+	text-align: left; 
+	background-color:#108dcf; 
+	background-color:rgba(255,255,255,.5); 
+	width:150px; 
+	border-radius:6px; 
+	/*margin-left:-40px;*/
+	top: 16px;
+
+}
+
+.nav li li > ul:after
+{
+	content:""; 
+	display:block; 
+	width:0; 
+	height:0; 
+	border-style:solid; 
+	/*background-color:#108dcf;*/
+	border-color: transparent transparent rgba(100%,100%,100%,.5); 
+	border-width: 15px 0px 10px 15px;
+	position:absolute; 
+	left:-5px; 
+	margin-left:-10px;
+
+}
+
+.nav li:hover li:hover > ul
+{
+	left: 105px; 
+	opacity:1;
+}
+
+.nav > li ul ul a:hover
 { 
 	text-decoration:underline;
 }
